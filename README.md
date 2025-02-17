@@ -15,16 +15,22 @@ The MOSFET structure has become the most important device structure in the Elect
 ![circuit](https://github.com/user-attachments/assets/8c68aa7b-da03-47d5-9af7-b50650b90725)
 
 # Sample values
-Given that V_DD = 1.8 V, Power budget = 50µW and 180nm tsmc nmos.
-Let’s assume the values of RD, RS, R1, R2, RL such that the FET should be in SATURATION REGION .
-i.e, V_GS > V_TH  and V_DS >V_OV.
-Assumed Values 
-RD = 2k ohm, RS = 680 ohm, RL = 1k ohm, R1 = 100k ohm
-R2 = 60k ohm
-Capacitors Values 
-C1,C2 (coupling capacitors) = 1uF
-Cs (bypass capacitors) = 10uF
-To Find Current ID
-P = V_DD × ID
-ID = 50µ/1.8
-ID = 27.7µ A
+echo "Given that V_DD = 1.8 V, Power budget = 50µW and 180nm tsmc nmos." >> README.md
+echo "" >> README.md  
+echo "Let's assume the values of RD, RS, R1, R2, RL such that the FET should be in *SATURATION REGION*." >> README.md
+echo "i.e, V_GS > V_TH  and V_DS > V_OV." >> README.md
+echo "" >> README.md  
+echo "Assumed Values" >> README.md
+echo "- RD = 2k ohm, RS = 680 ohm, RL = 1k ohm, R1 = 100k ohm" >> README.md
+echo "- R2 = 60k ohm" >> README.md
+echo "" >> README.md  
+echo "### Capacitors Values" >> README.md
+echo "- C1, C2 (coupling capacitors) = 1uF" >> README.md
+echo "- Cs (bypass capacitors) = 10uF" >> README.md
+echo "" >> README.md  
+echo "### To Find Current ID" >> README.md
+echo "\\\`" >> README.md  
+echo "P = V_DD × ID" >> README.md
+echo "ID = 50µW / 1.8V" >> README.md
+echo "ID = 27.74 µA" >> README.md
+echo "\\\`" >> README.md  

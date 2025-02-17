@@ -137,13 +137,13 @@ Therefore fet is in Saturation Region.
 DC Operating Point Analysis:
 The transistor operates within the saturation region if , it ensuring right amplification.
 
-DC Sweep Analysis:                                      
+**DC Sweep Analysis:**
 By simulation I saw the transfer characteristics of  V_GS in DC Analysis. 
 
-AC Analysis (Gain in dB):
+**AC Analysis (Gain in dB):**
 By Simulation I saw the frequency response of Cs amplifier and learnt how to find Gain 
 
-Transient Analysis:
+**Transient Analysis:**
 By Simulation I saw the output waveform and input waveform and output waveform have minimum distortion. 
 
 Overall I learnt Transient Analysis, DC Analysis,  AC Analysis using LTSpice.

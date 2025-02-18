@@ -127,7 +127,7 @@ By Simulation I saw the frequency response of Cs amplifier and learnt how to fin
 **Transient Analysis:**
 By Simulation I saw the output waveform and input waveform and output waveform have minimum distortion. 
 
-# Cicuit 2
+# Circuit 2
 
 # Introduction
 

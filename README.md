@@ -17,13 +17,13 @@ The MOSFET structure has become the most important device structure in the Elect
 # Sample values
 Given that V_DD = 1.8 V, Power budget = 50µW and 180nm tsmc nmos.
 
-Let's assume the values of RD, RS, R1, R2, RL such that the FET should be in **SATURATION REGION**
+Let's assume the values of RD, such that the FET should be in **SATURATION REGION**
 
 i.e, V_GS > V_TH  and V_DS > V_OV.
 
-**Assumed Values**
+**Assumed Value**
 
-**Resister Values**
+**Resister Value**
 
 RD = 2k ohm
 
@@ -34,6 +34,8 @@ P = V_DD × ID
 ID = 50µW / 1.8V
 
 ID = 27.77 µA
+
+**To get this current W and L should be 1.72 µm and 1.82 µm respectively**
 
 # Transient Analysis
 

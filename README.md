@@ -1,7 +1,7 @@
 # Linear Integrated Circuits Lab Report
 # Experiment 1: ANALYSIS OF CS AMPLIFIER
 # Introduction
-A Common Source (CS) amplifier, optimized for low-power applications, is designed and analysed using a 180nm TSMC MOSFET in LTSpice. To evaluate the amplifier's DC operating point, voltage gain, bandwidth, and power consumption, it employs data from DC, AC and transient analyses while operating at VDD = 1.8V and with a 90W power budget. Low-power VLSI systems are made more efficient with a combination of high gain and wide bandwidth, which minimizes power consumption.
+A Common Source (CS) amplifier, optimized for low-power applications, is designed and analysed using a 180nm TSMC MOSFET in LTSpice. To evaluate the amplifier's DC operating point, voltage gain, bandwidth, and power consumption, it employs data from DC, AC and transient analyses while operating at VDD = 1.8V and with a 50uW power budget. Low-power VLSI systems are made more efficient with a combination of high gain and wide bandwidth, which minimizes power consumption.
 # Aim
  To analyse the common source amplifier using 180nm tsmc  cmos n-mosfet for a given V_DD = 1.8V & determine bandwidth , gain, DC operating point, power and draw its frequency response.
 # Component required 
@@ -12,11 +12,11 @@ A Common Source (CS) amplifier, optimized for low-power applications, is designe
 # Theory
 The MOSFET structure has become the most important device structure in the Electronics industry. It dominates the integrated circuit technology in Very Large Scale Integrated (VLSI) digital circuits based on n-channel MOSFETs and Complementary n- Channel and p-channel MOSFETs (CMOS). The technical importance of the MOSFET results from Its low power consumption, simple geometry, and small size, resulting in very high packing Densities and compatibility with VLSI manufacturing technology. Two of the most popular Configurations of small-signal MOSFET amplifiers are the common source and common drain Configurations. The common source circuit is shown below. The common sources, like all MOSFET amplifiers, have the characteristic of high input impedance. High input impedance is Desirable to keep the amplifier from loading the signal source. This high input impedance is Controlled by the bias resistors R1 and R2). Normally the value of the bias resistors is chosen as High as possible. However, too big a value can cause a significant voltage drop due to the gate Leakage current. A large voltage drop is undesirable because it can disturb the bias point. For Amplifier operation the MOSFET should be biased in the active region of the characteristics. 
 # Circuit Design:
-![circuit design](https://github.com/user-attachments/assets/48551f4f-737d-4d12-85d9-1abed4b2f0ad)
+![circuitddd](https://github.com/user-attachments/assets/63ecf804-7d7b-4316-ad6c-c4fc1b3521bd)
 
 
 # Sample values
-Given that V_DD = 1.8 V, Power budget = 90µW and 180nm tsmc nmos.
+Given that V_DD = 1.8 V, Power budget = 50µW and 180nm tsmc nmos.
 
 Let's assume the values of RD, RS, R1, R2, RL such that the FET should be in **SATURATION REGION**
 
@@ -26,45 +26,36 @@ i.e, V_GS > V_TH  and V_DS > V_OV.
 
 **Resister Values**
 
-RD = 2k ohm, RS = 680 ohm, RL = 1k ohm, R1 = 100k ohm, R2 = 60k ohm
-
-**Capacitors Values**
-
-C1, C2 (coupling capacitors) = 1uF
-Cs (bypass capacitors) = 10uF
+RD = 2k ohm
 
 **To Find Current ID**
 
 P = V_DD × ID
 
-ID = 90µW / 1.8V
+ID = 50µW / 1.8V
 
-ID = 50 µA
+ID = 27.77 µA
 
 # Transient Analysis
 
 **Input Characteristics:**
-![input trs](https://github.com/user-attachments/assets/c5afcd92-a08b-4b30-96d3-2234ae4ab50e)
+![T1](https://github.com/user-attachments/assets/2ee00ab2-c1b3-4111-84fc-bdb275e00332)
 
 **Output Chracteristics:**
-![output trs](https://github.com/user-attachments/assets/3cc59ee7-79ea-446c-9c71-cfad7ef6b27e)
+![T2](https://github.com/user-attachments/assets/42ffc16c-0ede-4822-b4c0-347abbe771eb)
 
 **Input and Output Chracteristics:**
-![input vs output](https://github.com/user-attachments/assets/4f8e9aa4-7dcc-4f67-8d13-89b97659d588)
+![TR](https://github.com/user-attachments/assets/34963b7b-8658-4240-a20b-fd01937b4756)
 
 # DC Analysis
 
-![DC analya](https://github.com/user-attachments/assets/8d32eed2-33fa-486b-8d70-6c398711df5d)
+![DCDC](https://github.com/user-attachments/assets/fb714344-a805-449c-bdd8-118016f9eedf)
 
 # AC Analysis
 
-**Vout/Vin**
-
-![AC analysis_1](https://github.com/user-attachments/assets/9c8e39e9-c186-4ba6-9b73-b2d5d2c8e2d3)
-
 **Vout/Vin in dB**
 
-![ACCC](https://github.com/user-attachments/assets/45e5483f-a4a3-4517-b7a4-c9a19f10acc3)
+![AC(Vout_Vin)](https://github.com/user-attachments/assets/742e24ac-0f0e-403a-a5f5-4650cfa96e91)
 
 # Result
 
@@ -72,35 +63,22 @@ ID = 50 µA
 
 **DC OPERATING POINTS**
 
-![op](https://github.com/user-attachments/assets/6c4d54bf-c8f6-4d41-aed0-811a1a752e14)
+![dcop](https://github.com/user-attachments/assets/fe3e8d2e-98c4-4cb3-9ecb-5d5f265a0a2a)
 
 **POWER DISSIPIATION**
 
 Vin = 0 W
 
-VDD = 90.2 µW
+VDD = 50.2 µW
 
-RD = 3.02 µW
+RD = 5.02 µW
 
-RS = 1.02 µW
-
-R1 = 12.65 µW
-
-R2 = 7.59 µW
 
 **GAIN in dB**
 
 Av = Vout / Vin
 
-Av ~ 29dB
-
-**BAND WIDTH**
-
-BW = FH – FL
-
-BW = 350M Hz - 1k Hz
-
-BW = 3.49M Hz
+Av ~ 42dB
 
 **DC ANALYSIS**
 
@@ -110,23 +88,23 @@ VTH = 0.36 v (given in nmos model), VDD = 1.8 v, VG= 0.675 v, VS = 0.026 v, VD =
 
 V_GS = VG – VS
 
-V_GS = 0.675 – 0.026
+V_GS = 0.675 – 0
 
-V_GS = 0.649 v
+V_GS = 0.675 v
 
 Hence VGS > VTH 
 
 V_OV = VGS – VTH
 
-V_OV = 0.649 – 0.36
+V_OV = 0.675 – 0.36
 
-V_OV = 0.289 v
+V_OV = 0.315 v
 
 V_DS = VD – VS 
 
-V_DS = 1.72 – 0.026
+V_DS = 1.72 – 0
 
-V_DS = 1.694 v
+V_DS = 1.72 v
 
 Hence V_DS > V_OV 
 

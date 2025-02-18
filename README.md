@@ -14,7 +14,7 @@ The MOSFET structure has become the most important device structure in the Elect
 ![circuitddd](https://github.com/user-attachments/assets/63ecf804-7d7b-4316-ad6c-c4fc1b3521bd)
 
 
-# Sample values
+# Given values
 Given that V_DD = 1.8 V, Power budget = 50µW and 180nm tsmc nmos.
 
 Let's assume the values of RD, such that the FET should be in **SATURATION REGION**

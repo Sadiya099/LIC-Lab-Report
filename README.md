@@ -46,7 +46,8 @@ ID = 27.77 µA
 ![T2](https://github.com/user-attachments/assets/42ffc16c-0ede-4822-b4c0-347abbe771eb)
 
 **Input and Output Chracteristics:**
-![TR](https://github.com/user-attachments/assets/34963b7b-8658-4240-a20b-fd01937b4756)
+![correct_ana](https://github.com/user-attachments/assets/7ba6db6a-0a9a-4a87-a511-6b620717483e)
+
 
 # DC Analysis
 

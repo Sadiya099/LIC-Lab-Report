@@ -12,7 +12,8 @@ A Common Source (CS) amplifier, optimized for low-power applications, is designe
 # Theory
 The MOSFET structure has become the most important device structure in the Electronics industry. It dominates the integrated circuit technology in Very Large Scale Integrated (VLSI) digital circuits based on n-channel MOSFETs and Complementary n- Channel and p-channel MOSFETs (CMOS). The technical importance of the MOSFET results from Its low power consumption, simple geometry, and small size, resulting in very high packing Densities and compatibility with VLSI manufacturing technology. Two of the most popular Configurations of small-signal MOSFET amplifiers are the common source and common drain Configurations. The common source circuit is shown below. The common sources, like all MOSFET amplifiers, have the characteristic of high input impedance. High input impedance is Desirable to keep the amplifier from loading the signal source. This high input impedance is Controlled by the bias resistor). Normally the value of the bias resistors is chosen as High as possible. However, too big a value can cause a significant voltage drop due to the gate Leakage current. A large voltage drop is undesirable because it can disturb the bias point. For Amplifier operation the MOSFET should be biased in the active region of the characteristics. 
 # Circuit Design:
-![circuitddd](https://github.com/user-attachments/assets/63ecf804-7d7b-4316-ad6c-c4fc1b3521bd)
+
+![circuit 1](https://github.com/user-attachments/assets/cf3a6da5-f60b-42b9-a566-331bf9af4c80)
 
 
 # Given values
@@ -26,7 +27,7 @@ i.e, V_GS > V_TH  and V_DS > V_OV.
 
 **Resister Value**
 
-RD = 2k ohm
+RD = 30k ohm
 
 **To Find Current ID**
 
@@ -36,29 +37,51 @@ ID = 50µW / 1.8V
 
 ID = 27.77 µA
 
-**To get this current W and L should be 1.72 µm and 1.82 µm respectively**
+**W and L values for NMOS(M1)**
+
+![WandL of nmos cir1](https://github.com/user-attachments/assets/8daae6a0-9d36-4870-bcf0-4b27f8d66d01)
+
 
 # Transient Analysis
 
 **Input Characteristics:**
-![T1](https://github.com/user-attachments/assets/2ee00ab2-c1b3-4111-84fc-bdb275e00332)
+
+![input trs cir 1](https://github.com/user-attachments/assets/db91f6f3-5ab8-4182-8156-0cefcc229301)
+
 
 **Output Chracteristics:**
-![T2](https://github.com/user-attachments/assets/42ffc16c-0ede-4822-b4c0-347abbe771eb)
+
+![ouput trs cir1](https://github.com/user-attachments/assets/326e7a4c-cc90-48e1-8bff-5f8de4aed955)
+
 
 **Input and Output Chracteristics:**
-![correct_ana](https://github.com/user-attachments/assets/7ba6db6a-0a9a-4a87-a511-6b620717483e)
+
+![transient cir1](https://github.com/user-attachments/assets/7f8df125-fbc3-4ca1-9c2e-0bc410149355)
 
 
 # DC Analysis
 
-![DCDC](https://github.com/user-attachments/assets/fb714344-a805-449c-bdd8-118016f9eedf)
+![dcanalysis cir1](https://github.com/user-attachments/assets/c4454be3-3aeb-4d38-a575-1da4291d6f4b)
+
+**V_gs > Vth and V_ds > V_ov**
+
+**V_ov = V_gs - V_th = 0.9V - 0.36V = 0.54V**
+
+**i.e, 0.9V > 0.36V and 0.97V > 0.54V**
+
+**By this analysis we can say that Fet is in Saturation Region**
+
+# DC Sweep Analysis
+
+![DCsweep cir1](https://github.com/user-attachments/assets/0b7e8de2-e510-451a-ac03-8f5950bcaf20)
+
 
 # AC Analysis
 
 **Vout/Vin in dB**
 
-![AC(Vout_Vin)](https://github.com/user-attachments/assets/742e24ac-0f0e-403a-a5f5-4650cfa96e91)
+![Analysis of ac cir1](https://github.com/user-attachments/assets/5ec79969-75b6-4df8-bdfd-30708933b321)
+
 
 # Result
 
@@ -66,52 +89,24 @@ ID = 27.77 µA
 
 **DC OPERATING POINTS**
 
-![dcop](https://github.com/user-attachments/assets/fe3e8d2e-98c4-4cb3-9ecb-5d5f265a0a2a)
+![DC_operatingpoit cir1](https://github.com/user-attachments/assets/0159af9b-8f99-4835-8eb9-f06bfbe23869)
+
 
 **POWER DISSIPIATION**
 
 Vin = 0 W
 
-VDD = 50.2 µW
+VDD = 49.76 µW
 
-RD = 5.02 µW
+RD = 22.93 µW
 
 
 **GAIN in dB**
 
 Av = Vout / Vin
 
-Av ~ 42dB
+Av ~ 39.2dB
 
-**DC ANALYSIS**
-
-Conditions for nmos to be in Saturation Region  V_GS > V_TH , V_DS > V_OV
-
-VTH = 0.36 v (given in nmos model), VDD = 1.8 v, VG= 0.675 v, VS = 0.026 v, VD = 1.72 v.
-
-V_GS = VG – VS
-
-V_GS = 0.675 – 0
-
-V_GS = 0.675 v
-
-Hence VGS > VTH 
-
-V_OV = VGS – VTH
-
-V_OV = 0.675 – 0.36
-
-V_OV = 0.315 v
-
-V_DS = VD – VS 
-
-V_DS = 1.72 – 0
-
-V_DS = 1.72 v
-
-Hence V_DS > V_OV 
-
-Therefore fet is in Saturation Region.
 
 # Inference
 
@@ -157,7 +152,9 @@ Given that V_DD = 1.8 V, Power budget = 50µW and 180nm tsmc nmos and pmos.
 
 Let's assume the values of W and L, such that the FET should be in **SATURATION REGION**
 
-i.e, V_GS > V_TH  and V_DS > V_OV.
+i.e, V_SG > |V_TH|  and V_SD > |V_OV|. for PMOS
+
+i.e, V_GS > V_TH  and V_DS > V_OV. for NMOS
 
 **To Find Current ID**
 
@@ -201,6 +198,10 @@ ID = 27.77 µA
 **V_gs > Vth and V_ds > V_dsat**
 
 **i.e, 0.9V > 0.6V and 0.399V > 0.293V**
+
+**V_sg > |Vth| and V_sd > |V_dsat|**
+
+**i.e, 1.4V > 0.42V and 1.4V > 0.698V**
 
 **By this analysis we can say that Fet is in Saturation Region**
 

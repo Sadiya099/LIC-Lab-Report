@@ -148,7 +148,7 @@ A Common Source (CS) amplifier, optimized for low-power applications, is designe
 This circuit depicts a CMOS inverter, a fundamental building block in digital logic. It consists of a PMOS (M2) and NMOS (CMOSN) transistor connected in series. When the input (V3) is low, the PMOS is ON, pulling the output (V1) high. Conversely, when the input is high, the NMOS is ON, pulling the output low. This creates an inversion function. The sine wave inputs (SINE) with AC analysis commands (AC 1) suggest examining the circuit's frequency response and behavior with varying input signals. The 1.8V source represents the supply voltage for the CMOS logic.
 
 # Circuit Design:
-![circuit2circuit](https://github.com/user-attachments/assets/db3ccacd-9b75-427e-b0e4-9dc24b31ee95)
+![Circuit_2](https://github.com/user-attachments/assets/22e5862c-7297-4b1a-b3cd-79a3782dde43)
 
 
 
@@ -167,27 +167,54 @@ ID = 50µW / 1.8V
 
 ID = 27.77 µA
 
-**To get this current value and saturation region W and L of both fet should be 500 nm and 500 nm respectively**
+**W and L values for PMOS(M1)**
+
+![WandL of pmos cir2](https://github.com/user-attachments/assets/28a9703d-f9e4-4378-9bc5-5b1e591527a6)
+
+
+**W and L values for NMOS(M2)**
+
+![WandL of nmos cir2](https://github.com/user-attachments/assets/2e0884e0-2996-49af-8a8b-114525bb633e)
+
 
 # Transient Analysis
 
 **Input Characteristics:**
-![circuit2tr1](https://github.com/user-attachments/assets/90d99c6f-ba71-43c3-b59d-d90df47e2804)
+
+![input_trs cir2](https://github.com/user-attachments/assets/0ba37800-af72-47ba-b082-d8eb837a4535)
 
 
 **Output Chracteristics:**
-![circuit2tr2](https://github.com/user-attachments/assets/87ec8b0b-c8de-4d14-8d75-a69948cb4f07)
+
+![output_trs cir2](https://github.com/user-attachments/assets/4ab1f59d-d1ac-4da7-afd5-5f4671b5a4d2)
 
 
 **Input and Output Chracteristics:**
-![circuit2trfull](https://github.com/user-attachments/assets/baf158bb-84fa-448c-af97-8634c0842334)
+
+![transient_analysis cir2](https://github.com/user-attachments/assets/50057fbb-7a1c-4b2a-9432-f204897366e8)
+
+
+# DC Analysis
+
+![DC operation for cir2](https://github.com/user-attachments/assets/3ff56640-fbc4-4b8e-b72a-0fa1928391e2)
+
+**V_gs > Vth and V_ds > V_dsat**
+
+**i.e, 0.9V > 0.6V and 0.399V > 0.293V**
+
+**By this analysis we can say that Fet is in Saturation Region**
+
+# DC Sweep Analysis
+
+![DC_analysis cir2](https://github.com/user-attachments/assets/fd4668f5-cf0e-45c0-a147-4f37c6be3de4)
 
 
 # AC Analysis
 
 **Vout/Vin in dB**
 
-![circuit2acfull](https://github.com/user-attachments/assets/0a67f53a-8f6e-46c5-aa17-710a05a9ceb5)
+![AnalysisOfac cir2](https://github.com/user-attachments/assets/7e259156-f971-41a1-8889-d3a5a19abe7e)
+
 
 # Result
 
@@ -195,18 +222,18 @@ ID = 27.77 µA
 
 **DC OPERATING POINTS**
 
-![circuit2op](https://github.com/user-attachments/assets/cefa814d-94d6-4e9e-b03c-52dcaa6f0686)
+![DC_operating_region cir2](https://github.com/user-attachments/assets/e1071f01-2737-4d5c-bf5f-854c2266eaf7)
 
 
 **POWER DISSIPIATION**
 
 Vin = 0 W
 
-VDD = 50.0 µW
+VDD = 49.84 µW
 
-M1 = 34.38 µW
+M1 = 38.50 µW
 
-M2 = 15.62 µW
+M2 = 10.98 µW
 
 
 **GAIN in dB**

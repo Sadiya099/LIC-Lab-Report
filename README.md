@@ -110,7 +110,7 @@ Av ~ 39.2dB
 
 # Inference
 
-DC Operating Point Analysis:
+**DC Operating Point Analysis:**
 The transistor operates within the saturation region if , it ensuring right amplification.
 
 **DC Sweep Analysis:**
@@ -245,7 +245,7 @@ Av ~ 29dB
 
 # Inference
 
-DC Operating Point Analysis:
+**DC Operating Point Analysis:**
 The transistor operates within the saturation region if , it ensuring right amplification.
 
 **DC Sweep Analysis:**

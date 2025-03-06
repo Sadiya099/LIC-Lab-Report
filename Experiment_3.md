@@ -90,6 +90,10 @@ For Saturation region V_DS > V_OV
 
 i.e., 1.11V > 0.54V 
 
+gm = ID/2*Vov = 0.455mA/2 * 0.54 = 0.8425 mA/V
+
+Small Signal gain Av = gm * R_d = 0.8425mA *3.274kohm = 2.758
+
 Therefore FET is in saturation region.
 
 **If the value of Vicm increases from 1.72 to 1.82 i.e, increased by 0.1V then**
@@ -196,6 +200,10 @@ For Saturation region V_DS > V_OV
 i.e., 1.11V > 0.54V 
 
 Therefore FET is in saturation region.
+
+gm = ID/2*Vov = 0.455mA/2 * 0.54 = 0.8425 mA/V
+
+Small Signal gain Av = gm * R_d = 0.8425mA *3.274kohm = 2.758
 
 **If the value of Vicm increases from 1.72 to 1.82 i.e, increased by 0.1V then**
 
@@ -312,6 +320,10 @@ i.e., 1.11V > 0.54V
 
 Therefore FET is in saturation region.
 
+gm = ID/2*Vov = 0.455mA/2 * 0.54 = 0.8425 mA/V
+
+Small Signal gain Av = gm * R_d = 0.8425mA *3.274kohm = 2.758
+
 **V3 = Vp + Vth = 0.7 + 0.366 = 1.066**
 
 **If the value of Vicm increases from 1.72 to 1.82 i.e, increased by 0.1V then**
@@ -386,3 +398,73 @@ Gain(diff) in dB = 10.06 dB
 ![cirrrr33333](https://github.com/user-attachments/assets/1cb62a65-c385-4681-88a2-ac0d239622c5)
 
 by this we can say that gain is almost equal to the theoretical value.
+
+## Result 
+
+**Circuit 1 :** 
+
+We will use here Resistor(RSS)
+
+If the value of Vicm increases from 1.72 to 1.82 i.e, increased by 0.1V then
+
+Vocm decreases slightly 
+
+Vp slightly increases 
+
+Q point also has slight changes and becomes (0.92V , 0.492mA) here V_DS decreases
+
+**Circuit 2:**
+
+We will use here Current(I_SS)
+
+If the value of Vicm increases from 1.72 to 1.82 i.e, increased by 0.1V then
+
+Vocm remains as it is .
+
+Vp increases  .
+
+Q point also has slight changes and becomes (1.01V , 0.455mA) here V_DS decreases
+
+**Circuit 3:**
+
+We will use here FET(NMOS)
+
+If the value of Vicm increases from 1.72 to 1.82 i.e, increased by 0.1V then
+
+Vocm slightly decreases 
+
+Vp increases 
+
+Q point also has changes and becomes (1V , 0.461mA) here V_DS decreases
+
+## INFERENCE
+
+Performed Transient Analysis,dc analysis,ac anlysis.
+
+Resistor as Current Source:
+
+DC: Bias point varies with supply/resistor tolerances.
+
+AC: Lower gain and poorer common-mode rejection.
+
+Conclusion: Simple but not suitable for high-precision or high-gain applications.
+
+
+Ideal Current Source:
+
+DC: Perfectly stable biasing.
+
+AC: Maximum differential gain and excellent CMRR.
+
+Conclusion: Sets the performance benchmark but is impractical to implement directly.
+
+
+NMOS as Current Source:
+
+DC: Provides stable biasing close to the ideal case.
+
+AC: High differential gain and improved CMRR, nearly matching the ideal source.
+
+Conclusion: Offers a practical and balanced approach, making it the preferred choice in most real-world differential amplifier designs.
+
+

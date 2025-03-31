@@ -235,9 +235,7 @@ For applications requiring higher bandwidth (e.g., RF amplifiers), a lower curre
 ## Conclusion
 
 A current mirror circuit replicates a reference current (IREF) through one or more transistors, ensuring a constant output current despite variations in load. It uses MOSFETs in saturation to 
-
 maintain a stable current ratio, which depends on the aspect ratios (W/L) of the transistors. Current mirrors are widely used in analog circuits, such as operational amplifiers and differential 
-
 amplifiers, to provide biasing and active loads. They offer high accuracy, low power consumption, and improved stability in integrated circuits.
 
 

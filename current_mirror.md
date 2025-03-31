@@ -1,5 +1,7 @@
-# EXPERIMENT 6: CURRENT MIRROR CIRCUITS
-## AIM: Design , analyze, and simulate a current mirror circuit used as active load in an amplifier circuit and Using LTspice to simulate circuit behavior and evaluating the impact of channel length variation (Lmin = 180nm, L = 500nm) on performance. Varying the current mirror ratio and analyzing its effect on circuit performance.
+![partB DC op](https://github.com/user-attachments/assets/67156843-479c-4832-9a72-7c3f24874d77)# EXPERIMENT 6: CURRENT MIRROR CIRCUITS
+
+### AIM: Design , analyze, and simulate a current mirror circuit used as active load in an amplifier circuit and Using LTspice to simulate circuit behavior and evaluating the impact of channel length variation (Lmin = 180nm, L = 500nm) on performance. Varying the current mirror ratio and analyzing its effect on circuit performance.
+
 ## THEORY
 
 ![image](https://github.com/user-attachments/assets/67bea55c-71ea-44cb-abac-dc2432f5bfe5)
@@ -132,19 +134,20 @@ The circuit have six MOSFETs (M1 to M6) with distinct (W/L) ratios, designed to 
 
 ### CIRCUIT DESIGN 
 
-![image](https://github.com/user-attachments/assets/4b6d23ed-8131-42fa-88d0-b4c736f2a1b3)
+![part B circuot diagrzm](https://github.com/user-attachments/assets/b0a5af31-e25c-453e-8c11-545eac749b73)
 
 ### DC ANALYSIS
 
 **DC OPERATING POINTS**
 
-![image](https://github.com/user-attachments/assets/2b27b5e1-f20d-49bb-82d1-d4120a3bfa0b)
+![partB DC op](https://github.com/user-attachments/assets/327d383a-fd52-4655-969c-3f28ee716ef5)
+
 
 ### TRANSIENT ANALYSIS
 
 **INPUT AND OUTPUT**
 
-![image](https://github.com/user-attachments/assets/ebc1ee1a-b95d-4111-a24e-c6f90b5c4cea)
+![trs part b](https://github.com/user-attachments/assets/99a55790-5503-45d4-8151-fca441689503)
 
 Gain = Vopp/Vinpp 
 

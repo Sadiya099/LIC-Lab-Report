@@ -1,4 +1,4 @@
-![partB DC op](https://github.com/user-attachments/assets/67156843-479c-4832-9a72-7c3f24874d77)# EXPERIMENT 6: CURRENT MIRROR CIRCUITS
+# EXPERIMENT 6: CURRENT MIRROR CIRCUITS
 
 ### AIM: Design , analyze, and simulate a current mirror circuit used as active load in an amplifier circuit and Using LTspice to simulate circuit behavior and evaluating the impact of channel length variation (Lmin = 180nm, L = 500nm) on performance. Varying the current mirror ratio and analyzing its effect on circuit performance.
 

@@ -108,7 +108,8 @@ The above Output shows the Amplified Signal with 180° Phase Shift of input sign
 
 **DC OPERATING POINTS**
 
-![image](https://github.com/user-attachments/assets/37a0a9be-1e4d-4180-822c-d5b693aa55ca)
+![DC op 1_2](https://github.com/user-attachments/assets/45afcb23-7fdf-417a-897b-2e7f2781c0a1)
+
 
 **ID M1 = 370.4uA , ID M2 = 370.4uA , ID M3 = 185uA**
 
@@ -116,7 +117,8 @@ The above Output shows the Amplified Signal with 180° Phase Shift of input sign
 
 **Max Output Swing** 
 
-![image](https://github.com/user-attachments/assets/0df73717-af0f-43b6-86f0-0755a2c81a3e)
+![output swing 1_2](https://github.com/user-attachments/assets/375140ab-b2e9-4f6f-a123-6b9ce7bec5c6)
+
 
 The above Output shows the Amplified Signal with 180° Phase Shift of input signal of Amplitude 45mV.
 
@@ -124,7 +126,8 @@ The above Output shows the Amplified Signal with 180° Phase Shift of input sign
 
 ### AC ANALYSIS
 
-![image](https://github.com/user-attachments/assets/13c83a38-c2f5-4b5d-891b-8fc1f7798fc0)
+![AC analysis 1_2](https://github.com/user-attachments/assets/346b800d-6ade-4e81-8c9e-30cab8523a20)
+
 
 **Gain in dB is 20.7dB & Bandwidth is 1.713GHz** .
 

@@ -84,19 +84,46 @@ M3 = 3um/180nm
 
 ### TRANSIENT ANALYSIS
 
-**Max Output Swing** 
+**Max Output Swing L=180nm**
 
 ![image](https://github.com/user-attachments/assets/e7ea1fe7-9153-4760-b2ce-1e698345e6eb)
 
-The above Output shows the Amplified Signal with 180° Phase Shift of input signal of Amplitude 45mV.
-
 **The Gian from The Transient Analysis is -10.06 V/V.**
 
+**Max Output Swing L=500nm**
+
+![cir1_500nm](https://github.com/user-attachments/assets/63b8fe7c-a8fd-4505-951d-9baad78e2e0f)
+
+**The Gian from The Transient Analysis is -11.62 V/V.**
+
+**Max Output Swing L=1um**
+
+![cir1_1u ](https://github.com/user-attachments/assets/490ff278-a2b8-4c57-a97f-3344364bbf54)
+
+**The Gian from The Transient Analysis is -11.84 V/V.**
+
+
+**The above Output shows the Amplified Signal with 180° Phase Shift of input signal of Amplitude 45mV.**
+
 ### AC ANALYSIS
+
+**L=180nm**
 
 ![image](https://github.com/user-attachments/assets/4b827664-340d-4e40-8ebc-e7c168d1061d)
 
 **Gain in dB is 21.4dB & Bandwidth is 2.48GHz**
+
+**L=500nm**
+
+![cir1 500nm ac](https://github.com/user-attachments/assets/9cdf064d-d4d1-4595-8c3d-6ae4ad0a2ec2)
+
+**Gain in dB is 22.15dB & Bandwidth is 650.0MHz**
+
+**L=1um**
+
+![cir1_1u ac](https://github.com/user-attachments/assets/c11a2a4c-6703-436a-9b02-e2aea63fe8bc)
+
+**Gain in dB is 19.16dB & Bandwidth is 519.78MHz**
 
 ## SIMULATION OF CURRENT MIRROR LOAD COMMON SOURCE AMPLIFIER OF 1:2 MIRROR RATIO.
 
@@ -115,21 +142,44 @@ The above Output shows the Amplified Signal with 180° Phase Shift of input sign
 
 ### TRANSIENT ANALYSIS
 
-**Max Output Swing** 
+**Max Output Swing L=180nm** 
 
 ![output swing 1_2](https://github.com/user-attachments/assets/375140ab-b2e9-4f6f-a123-6b9ce7bec5c6)
-
 
 The above Output shows the Amplified Signal with 180° Phase Shift of input signal of Amplitude 45mV.
 
 **The Gian from The Transient Analysis is -10.133 V/V.**
 
+**Max Output Swing L=500nm** 
+
+![cir 2 500n trs](https://github.com/user-attachments/assets/6b25d19b-d5e3-4b7e-965b-104ae93d0cbd)
+
+The above Output shows the Amplified Signal with 180° Phase Shift of input signal of Amplitude 150mV.
+
+
+**Max Output Swing L=1um** 
+
+![cir 1u trs](https://github.com/user-attachments/assets/8096e6b1-57ce-42e5-a3fb-4d879b15b658)
+
+The above Output shows the Amplified Signal with 180° Phase Shift of input signal of Amplitude 150mV.
+
+
 ### AC ANALYSIS
+
+**L = 180nm**
 
 ![AC analysis 1_2](https://github.com/user-attachments/assets/346b800d-6ade-4e81-8c9e-30cab8523a20)
 
-
 **Gain in dB is 20.7dB & Bandwidth is 1.713GHz** .
+
+**L = 500nm**
+
+![cir2 500n ac](https://github.com/user-attachments/assets/18d4d639-7045-4d22-8da4-9b9f3c8213e0)
+
+**L = 500nm**
+
+![cir2 1u ac](https://github.com/user-attachments/assets/5373ed29-23ae-48af-91b1-33bb9a4f8df9)
+
 
 ## PART B:DESIGN OF DIFFERENTIAL AMPLIFIER USING CURRENT MIRROR
 

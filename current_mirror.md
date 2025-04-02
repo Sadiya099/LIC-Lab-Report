@@ -94,13 +94,13 @@ M3 = 3um/180nm
 
 ![cir1_500nm](https://github.com/user-attachments/assets/63b8fe7c-a8fd-4505-951d-9baad78e2e0f)
 
-**The Gian from The Transient Analysis is -11.62 V/V.**
+**The Gian from The Transient Analysis is -11.84 V/V.**
 
 **Max Output Swing L=1um**
 
 ![cir1_1u ](https://github.com/user-attachments/assets/490ff278-a2b8-4c57-a97f-3344364bbf54)
 
-**The Gian from The Transient Analysis is -11.84 V/V.**
+**The Gian from The Transient Analysis is -11.62 V/V.**
 
 
 **The above Output shows the Amplified Signal with 180° Phase Shift of input signal of Amplitude 45mV.**

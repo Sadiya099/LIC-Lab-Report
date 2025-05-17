@@ -37,9 +37,6 @@ ID = 50µW / 1.8V
 
 ID = 27.77 µA
 
-**W and L values for NMOS(M1)**
-
-![WandL of nmos cir1](https://github.com/user-attachments/assets/8daae6a0-9d36-4870-bcf0-4b27f8d66d01)
 
 
 # Transient Analysis
@@ -163,15 +160,6 @@ P = V_DD × ID
 ID = 50µW / 1.8V
 
 ID = 27.77 µA
-
-**W and L values for PMOS(M1)**
-
-![WandL of pmos cir2](https://github.com/user-attachments/assets/28a9703d-f9e4-4378-9bc5-5b1e591527a6)
-
-
-**W and L values for NMOS(M2)**
-
-![WandL of nmos cir2](https://github.com/user-attachments/assets/2e0884e0-2996-49af-8a8b-114525bb633e)
 
 
 # Transient Analysis
